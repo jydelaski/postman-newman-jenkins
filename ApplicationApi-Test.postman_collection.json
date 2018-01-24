@@ -1,0 +1,83 @@
+{
+	"info": {
+		"name": "Api-Test",
+		"_postman_id": "066a97c7-9741-b29e-6afc-a8d803cac7c4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ApplicationApiAnswe-Test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0169b736-7df4-4730-a8ea-d03fac6c9427",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code : 200 OK\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"pm.test(\"Product Reference : \" +(jsonData.productRef), function () {});",
+							"pm.test(\"Unique Account Number : \" +(jsonData.uan), function () {});",
+							"pm.test(\"Country of Nationality : \" +(jsonData.form.sections[0].pages[0].questions[0].answer), function () {});",
+							"pm.test(\"Do You Have A Passport : \" +(jsonData.form.sections[0].pages[1].questions[0].answer), function () {});",
+							"pm.test(\"First Name : \" +(jsonData.form.sections[0].pages[1].questions[1].answer), function () {});",
+							"pm.test(\"Family Name : \" +(jsonData.form.sections[0].pages[1].questions[2].answer), function () {});",
+							"pm.test(\"Date Of Birth : \" +(jsonData.form.sections[0].pages[1].questions[3].answer), function () {});",
+							"pm.test(\"Country of Issue : \" +(jsonData.form.sections[0].pages[1].questions[4].answer), function () {});",
+							"pm.test(\"Passport Number : \" +(jsonData.form.sections[0].pages[1].questions[5].answer), function () {});",
+							"pm.test(\"Passport Issue Date : \" +(jsonData.form.sections[0].pages[1].questions[6].answer), function () {});",
+							"pm.test(\"Passport Expiry Date : \" +(jsonData.form.sections[0].pages[1].questions[7].answer), function () {});",
+							"pm.test(\"Do You Have An ID Card : \" +(jsonData.form.sections[0].pages[2].questions[0].answer), function () {});",
+							"pm.test(\"Country of Issue : \" +(jsonData.form.sections[0].pages[2].questions[1].answer), function () {});",
+							"pm.test(\"ID Number : \" +(jsonData.form.sections[0].pages[2].questions[2].answer), function () {});",
+							"pm.test(\"ID Issue Date : \" +(jsonData.form.sections[0].pages[2].questions[3].answer), function () {});",
+							"pm.test(\"ID Expiry Date : \" +(jsonData.form.sections[0].pages[2].questions[4].answer), function () {});",
+							"pm.test(\"Address Line 1 : \" +(jsonData.form.sections[1].pages[0].questions[0].answer), function () {});",
+							"pm.test(\"Address Line 2 : \" +(jsonData.form.sections[1].pages[0].questions[1].answer), function () {});",
+							"pm.test(\"Town : \" +(jsonData.form.sections[1].pages[0].questions[2].answer), function () {});",
+							"pm.test(\"County : \" +(jsonData.form.sections[1].pages[0].questions[3].answer), function () {});",
+							"pm.test(\"Postcode : \" +(jsonData.form.sections[1].pages[0].questions[4].answer), function () {});",
+							"pm.test(\"How would You Prefer To Be Contacted : \" +(jsonData.form.sections[1].pages[1].questions[0].answer), function () {});",
+							"",
+							"console.log(jsonData.form.sections[1].pages[1].questions[0].answer);"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application?uan=888879",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"application"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888879",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
