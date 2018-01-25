@@ -1,0 +1,393 @@
+{
+	"info": {
+		"name": "ApplicationAnswerApi-Reset",
+		"_postman_id": "e867abad-057b-96bc-7074-3dba27d05400",
+		"description": "This reset the value in the application to null",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Nationality Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"nationality\", \"answer\": null }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Has-passport Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"has-passport\", \"answer\": null  }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FirstName Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"first-name\", \"answer\": null  }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Family-name Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"family-name\", \"answer\": null  }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Date-of-birth Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"date-of-birth\", \"answer\": null  }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Country-of-issue Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"country-of-issue\", \"answer\": null }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Passport-number Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"passport-number\", \"answer\": null  }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "passport-issue-date Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"passport-issue-date\", \"answer\": null  }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Passport-expiry-date Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"passport-expiry-date\", \"answer\": null  }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Has-id-card Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"has-id-card\", \"answer\": null  }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "country-of-issue-Id-Card Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"country-of-issue\", \"answer\": null  }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Id-number Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"id-number\", \"answer\": null  }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "id-issue-date Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"id-issue-date\", \"answer\": null }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Id-expiry-date Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"id-expiry-date\", \"answer\": null  }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Address-line-1 Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"address-line-1\", \"answer\": null  }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Address-Town Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"town\", \"answer\": null  }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Address-County Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"county\", \"answer\": null  }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Address-Postcode Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"postcode\", \"answer\": null  }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Preferred-Contact-Method Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"preferred-contact-method\", \"answer\": null  }"
+				},
+				"url": "{{PostURL}}",
+				"description": ""
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "9d1f771b-e240-4c03-bdd1-13b7dfe6d714",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d61e1a1a-5af4-4234-95f2-25f4463327ef",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
