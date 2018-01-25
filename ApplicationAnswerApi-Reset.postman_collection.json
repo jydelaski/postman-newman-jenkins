@@ -1,6 +1,6 @@
 {
 	"info": {
-		"name": "ApplicationAnswerApi-Reset",
+		"name": "ApplicationAnswer-Reset",
 		"_postman_id": "e867abad-057b-96bc-7074-3dba27d05400",
 		"description": "This reset the value in the application to null",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
