@@ -270,7 +270,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"questionRef\": \"country-of-issue\", \"answer\": \"Great Britain\" }"
+					"raw": "{ \"questionRef\": \"country-of-issue\", \"answer\": \"GBR\" }"
 				},
 				"url": {
 					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
@@ -438,7 +438,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"questionRef\": \"has-id-card\", \"answer\": \"True\" }"
+					"raw": "{ \"questionRef\": \"has-id-card\", \"answer\": \"true\" }"
 				},
 				"url": {
 					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
@@ -480,7 +480,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"questionRef\": \"country-of-issue\", \"answer\": \"France\" }"
+					"raw": "{ \"questionRef\": \"country-of-issue\", \"answer\": \"FRA\" }"
 				},
 				"url": {
 					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
