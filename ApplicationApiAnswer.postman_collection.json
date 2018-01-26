@@ -91,6 +91,48 @@
 			"response": []
 		},
 		{
+			"name": "Nino Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"nino\", \"answer\": \"AA123456D\" }"
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"application",
+						"answer"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888860",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
 			"name": "FirstName Answer",
 			"request": {
 				"method": "POST",
@@ -775,48 +817,6 @@
 				"body": {
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"preferred-contact-method\", \"answer\": \"Phone\" }"
-				},
-				"url": {
-					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueappedev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888860",
-							"equals": true
-						}
-					]
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "Nino Answer",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{ \"questionRef\": \"nino\", \"answer\": \"AA123456D\" }"
 				},
 				"url": {
 					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
