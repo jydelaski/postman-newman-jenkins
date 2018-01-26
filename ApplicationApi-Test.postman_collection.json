@@ -12,7 +12,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "9f474575-d078-4b4a-b2b0-6c4b96a4e0d0",
+						"id": "3a5f1c3d-c79f-4698-8aa9-b1a7aedf22ff",
 						"type": "text/javascript",
 						"exec": [
 							"pm.test(\"Status code : 200 OK\", function () {",
@@ -44,7 +44,7 @@
 							"pm.test(\"Postcode : \" +(jsonData.form.sections[1].pages[0].questions[4].answer), function () {});",
 							"pm.test(\"How would You Prefer To Be Contacted : \" +(jsonData.form.sections[1].pages[1].questions[0].answer), function () {});",
 							"",
-							"console.log(jsonData.form.sections[0])"
+							""
 						]
 					}
 				}
