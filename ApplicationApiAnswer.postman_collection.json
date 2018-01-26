@@ -186,7 +186,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"questionRef\": \"date-of-birth\", \"answer\": \"07-04-1998\" }"
+					"raw": "{ \"questionRef\": \"date-of-birth\", \"answer\": \"1988-04-19\" }"
 				},
 				"url": {
 					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
@@ -312,7 +312,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"questionRef\": \"passport-issue-date\", \"answer\": \"01-10-2010\" }"
+					"raw": "{ \"questionRef\": \"passport-issue-date\", \"answer\": \"2010-10-20\" }"
 				},
 				"url": {
 					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
@@ -354,7 +354,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"questionRef\": \"passport-expiry-date\", \"answer\": \"01-10-2022\" }"
+					"raw": "{ \"questionRef\": \"passport-expiry-date\", \"answer\": \"2001-10-20\" }"
 				},
 				"url": {
 					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
@@ -522,7 +522,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"questionRef\": \"id-issue-date\", \"answer\": \"01-02-2001\" }"
+					"raw": "{ \"questionRef\": \"id-issue-date\", \"answer\": \"2001-02-20\" }"
 				},
 				"url": {
 					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
@@ -564,7 +564,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"questionRef\": \"id-expiry-date\", \"answer\": \"01-02-2022\" }"
+					"raw": "{ \"questionRef\": \"id-expiry-date\", \"answer\": \"2022-02-20\" }"
 				},
 				"url": {
 					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
@@ -775,6 +775,48 @@
 				"body": {
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"preferred-contact-method\", \"answer\": \"Phone\" }"
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"application",
+						"answer"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888860",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Nino Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"nino\", \"answer\": \"AA123456D\" }"
 				},
 				"url": {
 					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
