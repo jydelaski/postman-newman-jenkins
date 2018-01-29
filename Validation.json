@@ -1,6 +1,6 @@
 {
 	"info": {
-		"name": "AppplicationApiAnswer-Validation",
+		"name": "ApplicationApi Validation Check",
 		"_postman_id": "c2c38192-a324-9b31-8dcf-02f9afb3840b",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
@@ -974,6 +974,28 @@
 				"description": ""
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2ffc1587-54da-43f8-bdb1-87b0f2387a2e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "f9d9d2cd-7392-436f-921c-45ba12bd831c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
