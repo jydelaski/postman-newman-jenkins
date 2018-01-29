@@ -7,6 +7,66 @@
 	},
 	"item": [
 		{
+			"name": "ApplicationApi-Validation",
+			"description": "",
+			"item": [
+				{
+					"name": "Nino Answer Validation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"id": "c12586bb-14d9-47db-a8c1-403c8ee6eb13",
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"questionRef\": \"nino\", \"answer\": \"AA000000A\" }"
+						},
+						"url": {
+							"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
+							"protocol": "https",
+							"host": [
+								"eue-applications-api-eueappedev1-kube10",
+								"service",
+								"np",
+								"iptho",
+								"co",
+								"uk"
+							],
+							"path": [
+								"eue-applications-api",
+								"application",
+								"answer"
+							],
+							"query": [
+								{
+									"key": "uan",
+									"value": "888860",
+									"equals": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Nationality Answer",
 			"request": {
 				"method": "POST",
@@ -91,7 +151,7 @@
 			"response": []
 		},
 		{
-			"name": "Nino Answer",
+			"name": "Nino Answer Validation",
 			"event": [
 				{
 					"listen": "test",
@@ -156,7 +216,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"questionRef\": \"first-name\", \"answer\": null  }"
+					"raw": "{ \"questionRef\": \"first-name\", \"answer\": \"null\"  }"
 				},
 				"url": {
 					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
@@ -198,7 +258,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"questionRef\": \"family-name\", \"answer\": null  }"
+					"raw": "{ \"questionRef\": \"family-name\", \"answer\": \"null\"  }"
 				},
 				"url": {
 					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
@@ -282,7 +342,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"questionRef\": \"country-of-issue\", \"answer\": \"0000-01-01\"  }"
+					"raw": "{ \"questionRef\": \"country-of-issue\", \"answer\": \"FRA\"  }"
 				},
 				"url": {
 					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
@@ -408,7 +468,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"questionRef\": \"passport-expiry-date\", \"answer\": \"0000-01-01\"   }"
+					"raw": "{ \"questionRef\": \"passport-expiry-date\", \"answer\": \"3000-01-01\"   }"
 				},
 				"url": {
 					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
@@ -450,7 +510,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"questionRef\": \"has-id-card\", \"answer\": null  }"
+					"raw": "{ \"questionRef\": \"has-id-card\", \"answer\": true  }"
 				},
 				"url": {
 					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
@@ -492,7 +552,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"questionRef\": \"country-of-issue\", \"answer\": null  }"
+					"raw": "{ \"questionRef\": \"country-of-issue\", \"answer\": \"FRA\"  }"
 				},
 				"url": {
 					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888860",
