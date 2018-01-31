@@ -1,0 +1,260 @@
+{
+	"info": {
+		"name": "FootPrint-EndPoint",
+		"_postman_id": "d99c77b5-f9c2-bfb6-1006-ff60d3b5ec00",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CheckFootprint(MandatedData)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/check/footprint?uan=888878",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"check",
+						"footprint"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888878",
+							"equals": true
+						}
+					]
+				},
+				"description": "This test has all the mandatory datas:\n\nFirst Name\nFamily Name\nNino\nDate of Birth"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckFootprint(W/O Nino)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8367988c-402d-4abd-af92-e0571d28c3a0",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code : 400 Bad Request\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"",
+							"",
+							"",
+							"pm.test(\"Error Message: Footprint check cannot be triggered until all information has been received\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Footprint check cannot be triggered until all information has been received\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/check/footprint?uan=888811",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"check",
+						"footprint"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888811",
+							"equals": true
+						}
+					]
+				},
+				"description": "This test has all the mandatory datas except Nino"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckFootprint(W/O FirstName)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "97fbe1c1-6079-44d9-bdfe-7ea902042110",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code : 400 Bad Request\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"",
+							"",
+							"",
+							"pm.test(\"Error Message: Footprint check cannot be triggered until all information has been received\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Footprint check cannot be triggered until all information has been received\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/check/footprint?uan=888812",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"check",
+						"footprint"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888812",
+							"equals": true
+						}
+					]
+				},
+				"description": "This test has all the mandatory datas except First-Name"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckFootprint(W/O FamilyName)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "97fbe1c1-6079-44d9-bdfe-7ea902042110",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code : 400 Bad Request\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"",
+							"",
+							"",
+							"pm.test(\"Error Message: Footprint check cannot be triggered until all information has been received\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Footprint check cannot be triggered until all information has been received\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/check/footprint?uan=888813",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"check",
+						"footprint"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888813",
+							"equals": true
+						}
+					]
+				},
+				"description": "This test has all the mandatory datas except Family-Name"
+			},
+			"response": []
+		},
+		{
+			"name": "CheckFootprint(W/O DateOfBirth)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "97fbe1c1-6079-44d9-bdfe-7ea902042110",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code : 400 Bad Request\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"",
+							"",
+							"",
+							"pm.test(\"Error Message: Footprint check cannot be triggered until all information has been received\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Footprint check cannot be triggered until all information has been received\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/check/footprint?uan=888814",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"check",
+						"footprint"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888814",
+							"equals": true
+						}
+					]
+				},
+				"description": "This test has all the mandatory datas except Date of Birth"
+			},
+			"response": []
+		}
+	]
+}

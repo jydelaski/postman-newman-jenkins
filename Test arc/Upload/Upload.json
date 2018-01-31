@@ -1,0 +1,86 @@
+{
+	"info": {
+		"name": "Upload1",
+		"_postman_id": "ac24b966-ea48-8ce5-97a2-1e2ca2798dec",
+		"description": "Uploading images and scanned docs via API endpoint",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Twitter",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "10304dba-65a4-4f01-bd8b-f5a609fcc910",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code : 200 OK\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"console.log(jsonData);",
+							" pm.test(\"Image Id : \" +(jsonData.media_id), function () {});",
+							" pm.test(\"Image Id String : \" +(jsonData.media_id_string), function () {});",
+							" pm.test(\"Image Size : \" +(jsonData.size), function () {});"
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": {
+						"addParamsToHeader": true,
+						"addEmptyParamsToSign": true,
+						"consumerSecret": "kYmk6Ur6ys2fGLOQBLzapqrhfs3s01KjD9yr0xAxUYctmXe6tf",
+						"tokenSecret": "w2OjinrWuQze47XE7eBkJe9PyrvdralFPDNYywwtkU8Lg",
+						"token": "164291963-ChQvDha1h6SCNLb4Pz3j1EFkfWXLAJ0j1yFk6rO5",
+						"consumerKey": "NmDw8h6F78ydeBpsqiholgawK",
+						"signatureMethod": "HMAC-SHA1",
+						"version": "1.0"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"description": "",
+							"key": "media",
+							"type": "file",
+							"src": "SpaceExplorer.jpg"
+						}
+					]
+				},
+				"url": "https://upload.twitter.com/1.1/media/upload.json",
+				"description": "Uploading images and scanned docs via API endpoint"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "cd6166e5-ef3c-4694-ab9a-419a17d8fed1",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "c5de0628-004b-4597-98a0-14a5ee9b1163",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
