@@ -1,0 +1,2155 @@
+{
+	"info": {
+		"name": "UploaderFileType-Validation",
+		"_postman_id": "1a9421b2-53b2-d375-c32c-591f7134425d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Valid pdf upload",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "52973dad-4dd3-4f15-932c-e682226bff62",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Vaild Pdf Upload Successful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "PDF.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Valid jpeg upload",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d11c182d-8219-4081-8f8b-fd0341870450",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Vaild Jpeg/Jpg Upload Successful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "JPG.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Valid png upload",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8cf997fe-acf3-4163-a55c-e72392104f8d",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Vaild Png Upload Successful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "PNG.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Valid JPEG capital extension upload",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5c540827-ad95-4204-8584-ff0e22504f5a",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Vaild Capital JPEG/JPG Extension Upload Successful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "JPEG (2).JPEG"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Valid PNG capital extension upload",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d67cef4b-cfb9-40c1-b6d2-771236078b99",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Vaild Capital PNG Extension Upload Successful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "PNG (2).PNG"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Valid PDF Capital extension file upload ",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6e49ce5e-4c16-4656-a186-55559b453322",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Vaild Capital PDF Extension Upload Successful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "PDF (2).PDF"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(LessThan5mb)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4419d805-e6e5-4842-80c5-8fb40c243878",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Message : Upload Successful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "System modelling_sample_answers.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=888815",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888815",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(JpegChangetoPdf)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e76050b9-dd61-4928-8db7-f0b8c5f2f63c",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(413);",
+							"});",
+							"pm.test(\"Error Message: Request Entity Too Large\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Request Entity Too Large\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "System modelling delegate guide.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=888815",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888815",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(JpegChangetoPng)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c66e6477-e6ed-44ce-b222-c20de9ed35c0",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Jpeg files changed to Png: File named SpaceExplorer.png is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named SpaceExplorer.png is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "SpaceExplorer.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=888815",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888815",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(JpgChangetoExcel)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "14bb8f8f-a0dc-482e-91b5-a69067ad8724",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Jpeg files changed to Excel: File named SpaceExplorer.xls is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named SpaceExplorer.xls is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "SpaceExplorer.xls"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=888815",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888815",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(JpgChangetoWord)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4bd9b542-bc4b-432e-b8da-e9e2716d5664",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function() {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Jpeg/Jpg files changed to .doc: File named SpaceExplorer.doc is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named SpaceExplorer.doc is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "SpaceExplorer.doc"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=888815",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888815",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(JpgChangetoPowerPoint)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c8e0efae-5143-4e58-a826-9d728e15fead",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Jpeg files changed to PowerPoint: File named SpaceExplorer.ppt is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named SpaceExplorer.ppt is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "SpaceExplorer.ppt"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=888815",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888815",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(JpegChangetoPdf)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c6f439de-8711-4846-bc75-c29218c349f0",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Jpeg files changed to Pdf: File named SpaceExplorer.pdf is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named SpaceExplorer.pdf is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "SpaceExplorer.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=888815",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888815",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(JpegChangetoText)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6b66e4cd-f9fd-478c-b418-c96e2ae2e83e",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Jpeg files changed to Txt: File named SpaceExplorer.txt is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named SpaceExplorer.txt is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "SpaceExplorer.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=888815",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888815",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(PngChangetoJpg)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a67a64ba-9499-460a-ba04-952059226414",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Png files changed to jpg: File named PNG.jpg is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named PNG.jpg is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "PNG.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=888815",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888815",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(PngChangetoExcel)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e7bcd46c-aea6-435c-8e2d-22f4d3fba1bd",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Png files changed to xls: File named PNG.xls is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named PNG.xls is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "PNG.xls"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=888815",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888815",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(PngChangetoDoc)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5783ded9-8256-4c5c-888c-35d5ceeaba00",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Png files changed to doc: File named PNG.doc is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named PNG.doc is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "PNG.doc"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=888815",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888815",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(PngChangetoPpt)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d25410b9-f142-4fde-b608-ad1ecced75d7",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Png files changed to ppt: File named PNG.ppt is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named PNG.ppt is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "PNG.ppt"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=888815",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888815",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(PngChangetoText)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0583cc43-8bfe-46be-a0cf-82569975dce0",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Png files changed to txt: File named PNG.txt is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named PNG.txt is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "PNG.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=888815",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888815",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(InvalidFileFormat .doc)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0d6141a4-03ff-4ed3-b2a9-e59a66306f2e",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating .doc files : File named WORD.docx is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named WORD.docx is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "WORD.docx"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(InvalidFileFormat .xls)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7638b38c-a5ff-4b1c-9598-e7d9213b7c50",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating .xls files : File named EXCEL.xlsx is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named EXCEL.xlsx is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "EXCEL.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(InvalidFileFormat .ppt)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "395901ed-6156-4adb-b454-54a36a1c7907",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating .ppt files : File named Powerpoint.pptx is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named Powerpoint.pptx is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "Powerpoint.pptx"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " FileValidation(InvalidFileFormat .txt)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "69a44a5b-f1de-4536-992d-1694550ac676",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating .txt files : File named TXT.txt is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named TXT.txt is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "TXT.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(PdfChangetoJpeg/Jpg)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "36053254-559f-483c-af34-4f2d86d7366f",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Pdf files changed to Jpeg/Jpg : File named PDF.jpg is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named PDF.jpg is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "PDF.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(PdfChangetoPng)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bcf915e4-2544-4a7f-9116-a30fd5414748",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Pdf files changed to Png : File named PDF.png is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named PDF.png is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "PDF.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(PdfChangetoXls)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c9b2c623-6836-4f8b-bb46-a5a22ee978de",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Pdf files changed to .xls : File named PDF.xlsx is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named PDF.xlsx is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "PDF.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(PdfChangetoDoc)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ab37a67b-5452-42e6-97e0-7107a386c143",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Pdf files changed to .doc : File named PDF.docx is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named PDF.docx is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "PDF.docx"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(PdfChangetoPpt)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6bc5ab33-30c8-49c2-9256-cdfdaf67fce9",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Pdf files changed to .ppt : File named PDF.pptx is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named PDF.pptx is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "PDF.pptx"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " FileValidation(PdfChangetoTxt)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e72b3951-254e-4c8d-b901-d0133de4e919",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Pdf files changed to .txt : File named PDF.txt is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named PDF.txt is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "PDF.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(PdfChangetoApple)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7e83f31f-30e0-4809-bbf0-3a0a41bdf9b9",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Pdf files changed to .Apple(Any random ext) : File named PDF.apple is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named PDF.apple is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "PDF.apple"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(DocChangetoBanana)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f024ef29-13c6-4c35-8b4e-2db6b6afe421",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Doc files changed to .Banana(Any random ext) : File named WORD.banana is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named WORD.banana is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "WORD.banana"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(DocChangetoPdf)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f4c7f878-b997-4de7-839c-04bc24e9e6aa",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Doc files changed to .Pdf : File named WORD.pdf is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named WORD.pdf is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "WORD.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FileValidation(XlsChangetoJpeg/Jpg)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a39625c6-8166-42a7-a873-0da0dea6300b",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Xls files changed to .Jpeg/Jpg : File named EXCEL.jpeg is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named EXCEL.jpeg is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "EXCEL.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " FileValidation(TxtChangetoPng)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "23be8e9f-e7b3-4789-acf0-458560d8f285",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Txt files changed to .Jpeg/Jpg : File named TXT.png is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named TXT.png is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "TXT.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " FileValidation(PptChangetoJpeg/Jpg)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7f3d32ae-87d6-4160-8d60-3aec7f81d588",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Failed\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"pm.test(\"Error Message for validating Ppt files changed to .Jpeg/Jpg : File named Powerpoint.jpg is not of an accepted file type\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"File named Powerpoint.jpg is not of an accepted file type\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "Powerpoint.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/documents/upload?uan=1221",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"documents",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "1221",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "e75c1984-3161-4c10-a3d5-0599ec32a6a8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "9cbab07e-cc86-48c2-92b2-ee06ae7d6b55",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
