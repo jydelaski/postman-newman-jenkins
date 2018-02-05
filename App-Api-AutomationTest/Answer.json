@@ -1132,15 +1132,12 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "36c21e33-b8b9-4e90-b663-ab6a1e21e30f",
+						"id": "74cd00a2-0fe6-49ad-95aa-bfe6b96ed039",
 						"type": "text/javascript",
 						"exec": [
-							"var jsonData = pm.response.json();",
-							"",
-							"pm.test(\"Status : \" +(jsonData.error), function () {});",
-							"pm.test(\"Error Message : \" +(jsonData.failures[0].message), function () {});",
-							"",
-							""
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
 						]
 					}
 				}
@@ -1155,7 +1152,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"questionRef\": \"document-gap-coverage\",\r\n  \"answer\": \"2015,2014\"\r\n}"
+					"raw": "{\r\n  \"questionRef\": \"document-gap-coverage\",\r\n  \"answer\": \"2015,2016\"\r\n}"
 				},
 				"url": {
 					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
