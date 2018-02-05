@@ -971,6 +971,123 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Preferred-Contact-Method Validation",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e5619037-c5e8-4213-b0b0-21cf26bceff7",
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status : \" +(jsonData.error), function () {});",
+							"pm.test(\"Error Description : \" +(jsonData.failures[0].message), function () {});",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"questionRef\": \"preferred-contact-method\", \"answer\": \"Phone,email\" }"
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"application",
+						"answer"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888878",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Document-Gaps Validation",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6aafceda-345d-409f-bd8b-2084823365f0",
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status : \" +(jsonData.error), function () {});",
+							"pm.test(\"Error Description : \" +(jsonData.failures[0].message), function () {});",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"questionRef\": \"document-gap-coverage\",\r\n  \"answer\": \"2015,2014\"\r\n}"
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"application",
+						"answer"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888878",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
 		}
 	],
 	"event": [

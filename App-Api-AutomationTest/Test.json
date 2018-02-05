@@ -12,7 +12,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "3a5f1c3d-c79f-4698-8aa9-b1a7aedf22ff",
+						"id": "dc282327-a3e6-4a04-bdb4-4f3fca91ae3b",
 						"type": "text/javascript",
 						"exec": [
 							"pm.test(\"Status code : 200 OK\", function () {",
@@ -43,6 +43,9 @@
 							"pm.test(\"County : \" +(jsonData.form.sections[1].pages[0].questions[3].answer), function () {});",
 							"pm.test(\"Postcode : \" +(jsonData.form.sections[1].pages[0].questions[4].answer), function () {});",
 							"pm.test(\"How would You Prefer To Be Contacted : \" +(jsonData.form.sections[1].pages[1].questions[0].answer), function () {});",
+							"pm.test(\"Document Gap Coverage : \" +(jsonData.form.sections[1].pages[2].questions[0].answer), function () {});",
+							"console.log(jsonData.form.sections[1].pages[2].questions[0].answer)",
+							"",
 							"",
 							""
 						]

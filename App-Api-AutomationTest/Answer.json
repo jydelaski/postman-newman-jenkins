@@ -8,6 +8,20 @@
 	"item": [
 		{
 			"name": "Nationality Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e98373e7-8588-46ac-8f84-84b9183fdaf9",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -50,6 +64,20 @@
 		},
 		{
 			"name": "Has-passport Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ad333901-ee77-4ea6-be0b-459b3010ea1d",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -92,6 +120,20 @@
 		},
 		{
 			"name": "Nino Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7c40a3ad-cdc8-40a2-b136-8cf2a4d22aa5",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -134,6 +176,20 @@
 		},
 		{
 			"name": "FirstName Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "13c07a89-4c4b-4164-b9a9-715751420d1c",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -176,6 +232,20 @@
 		},
 		{
 			"name": "Family-name Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ff6d3986-b8b4-4448-bb73-59c3967966fb",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -218,6 +288,20 @@
 		},
 		{
 			"name": "Date-of-birth Answer ",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a293650f-aa9d-4909-9779-46a9a4266247",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -260,6 +344,20 @@
 		},
 		{
 			"name": "Country-of-issue Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "07777d6b-ccad-4456-bc7b-850b30678084",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -302,6 +400,20 @@
 		},
 		{
 			"name": "Passport-number Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "777ce9cd-510e-4429-a709-4a625d0e3389",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -344,6 +456,20 @@
 		},
 		{
 			"name": "passport-issue-date Answer Validation",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0295cca2-aeb4-40ac-81bf-0b0ca3b3c05f",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -386,6 +512,20 @@
 		},
 		{
 			"name": "Passport-expiry-date Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "82cc2d2c-ddf7-46b6-b055-c7e2ce9bfbee",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -428,6 +568,20 @@
 		},
 		{
 			"name": "Has-id-card Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a386ec24-2b90-4e56-8198-1e41d9917c06",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -470,6 +624,20 @@
 		},
 		{
 			"name": "country-of-issue-Id-Card Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b047107f-6cd7-4d4d-8428-74205c74f90b",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -512,6 +680,20 @@
 		},
 		{
 			"name": "Id-number Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6e30d692-5ff6-4a2a-b144-1f1c36949150",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -554,6 +736,20 @@
 		},
 		{
 			"name": "id-issue-date Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5bc63191-93f1-4682-9176-7b52769ae78c",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -596,6 +792,20 @@
 		},
 		{
 			"name": "Id-expiry-date Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "538192cc-0071-4261-b1be-846aa16ff777",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -638,6 +848,20 @@
 		},
 		{
 			"name": "Address-line-1 Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b418bacb-7e8b-42c4-b81a-012835884d47",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -680,6 +904,20 @@
 		},
 		{
 			"name": "Address-Town Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a98d4ef4-dc8a-4363-b82e-d5d66bb6f16a",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -722,6 +960,20 @@
 		},
 		{
 			"name": "Address-County Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "88aad14d-16a1-47a0-acca-5584d8840c02",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -764,6 +1016,20 @@
 		},
 		{
 			"name": "Address-Postcode Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "539b620f-6292-490b-aee8-d0223c83e960",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -806,6 +1072,20 @@
 		},
 		{
 			"name": "Preferred-Contact-Method Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "77a1ba2a-944b-415e-8422-8e2ec340caf0",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Answer Sucessful\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -816,7 +1096,66 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"questionRef\": \"preferred-contact-method\", \"answer\": \"Phone\" }"
+					"raw": "{ \"questionRef\": \"preferred-contact-method\", \"answer\": \"phone,email\" }"
+				},
+				"url": {
+					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
+					"protocol": "https",
+					"host": [
+						"eue-applications-api-eueappedev1-kube10",
+						"service",
+						"np",
+						"iptho",
+						"co",
+						"uk"
+					],
+					"path": [
+						"eue-applications-api",
+						"application",
+						"answer"
+					],
+					"query": [
+						{
+							"key": "uan",
+							"value": "888878",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Document-Gaps Answer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "36c21e33-b8b9-4e90-b663-ab6a1e21e30f",
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status : \" +(jsonData.error), function () {});",
+							"pm.test(\"Error Message : \" +(jsonData.failures[0].message), function () {});",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"questionRef\": \"document-gap-coverage\",\r\n  \"answer\": \"2015,2014\"\r\n}"
 				},
 				"url": {
 					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
