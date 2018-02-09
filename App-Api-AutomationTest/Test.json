@@ -61,10 +61,10 @@
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "https://eue-applications-api-eueappedev1-kube10.service.np.iptho.co.uk/eue-applications-api/application?uan=888878",
+					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application?uan=888878",
 					"protocol": "https",
 					"host": [
-						"eue-applications-api-eueappedev1-kube10",
+						"eue-applications-api-eueapp2edev1-kube10",
 						"service",
 						"np",
 						"iptho",
