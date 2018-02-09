@@ -12,7 +12,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "8e331552-4afb-43ec-a54a-703d201a34a1",
+						"id": "90dce4cd-ef51-4ae4-b170-6a28bd7e3023",
 						"type": "text/javascript",
 						"exec": [
 							"pm.test(\"Status code : 200 OK\", function () {",
@@ -23,8 +23,6 @@
 							"pm.test(\"Payment Status : \" +(jsonData.paymentStatus), function () {});",
 							"pm.test(\"Documents Id : \" +(jsonData.documents[0].documentId), function () {});",
 							"pm.test(\"Documents Filename : \" +(jsonData.documents[0].filename), function () {});",
-							"pm.test(\"Documents Id[2] : \" +(jsonData.documents[1].documentId), function () {});",
-							"pm.test(\"Documents Filename[2] : \" +(jsonData.documents[1].filename), function () {});",
 							"pm.test(\"Product Reference : \" +(jsonData.productRef), function () {});",
 							"pm.test(\"Unique Account Number : \" +(jsonData.uan), function () {});",
 							"pm.test(\"Country of Nationality : \" +(jsonData.form.sections[0].pages[0].questions[0].answer), function () {});",
@@ -50,7 +48,7 @@
 							"pm.test(\"How would You Prefer To Be Contacted : \" +(jsonData.form.sections[1].pages[1].questions[0].answer), function () {});",
 							"pm.test(\"Document Gap Coverage : \" +(jsonData.form.sections[1].pages[2].questions[0].answer), function () {});",
 							"",
-							"",
+							"console.log(jsonData.documents)",
 							""
 						]
 					}
