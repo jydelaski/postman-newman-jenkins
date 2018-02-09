@@ -1188,10 +1188,10 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "213d1a90-b5f9-4305-8e88-6bc1572490c9",
+						"id": "41c76d83-c74a-4c4b-a1ff-53103da38a69",
 						"type": "text/javascript",
 						"exec": [
-							"pm.test(\"Document Id Deleted\", function () {",
+							"pm.test(\"Document Id 002 Deleted \", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
 						]
@@ -1202,7 +1202,7 @@
 				"method": "DELETE",
 				"header": [],
 				"body": {},
-				"url": "https://eue-db-service-eueappidev1-kube1.service.np.iptho.co.uk/eue-db-service/documents/ID001",
+				"url": "https://eue-db-service-eueappidev1-kube1.service.np.iptho.co.uk/eue-db-service/documents/ID002",
 				"description": "Deletes existing document id"
 			},
 			"response": []
