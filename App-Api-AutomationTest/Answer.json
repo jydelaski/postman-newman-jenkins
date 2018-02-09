@@ -1181,6 +1181,39 @@
 				"description": ""
 			},
 			"response": []
+		},
+		{
+			"name": "StoreDocIDAgainstUAN",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "55478322-9069-4de8-acdd-9b086e454f1a",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status : Upload Successful\", function() {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"uan\": \"888878\", \"documentId\": \"ID001\", \"filename\": \"UtilityBill.jpg\" }"
+				},
+				"url": "https://eue-db-service-eueappidev1-kube1.service.np.iptho.co.uk/eue-db-service/documents",
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
