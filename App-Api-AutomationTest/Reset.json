@@ -12,9 +12,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "94f07eaa-2752-4df1-9cc0-fb9b82ec2c76",
+						"id": "6589dd49-88db-42cf-8086-d6809e286323",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -34,30 +36,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"nationality\", \"answer\": \"GBR\" }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -68,9 +47,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "94f41b65-a06d-4924-b217-5ac57a25b23d",
+						"id": "da1f9dba-7f5d-43ee-93ba-8b4b9d9bbad1",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -90,30 +71,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"has-passport\", \"answer\": \"true\"  }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -124,9 +82,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "40ab8b6b-1111-4ca0-8672-d9032eebc83e",
+						"id": "88b6e78c-c6a9-46bd-92d1-a42baa8b5c65",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -146,30 +106,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"nino\", \"answer\": \"AA000000A\" }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -180,9 +117,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "4c42d923-40ad-4bd8-985a-5feeae9d1026",
+						"id": "fc6a4572-8091-4327-8126-349a595ee46e",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -202,30 +141,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"first-name\", \"answer\": \"null\"  }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -236,9 +152,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "a63f83a9-9756-4d98-addc-675a61c71608",
+						"id": "f9cc861d-a309-4ff8-97e1-4a21369124b5",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -258,30 +176,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"family-name\", \"answer\": \"null\"  }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -292,9 +187,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "f29865d3-2af3-4b5d-aa22-521c5515c73b",
+						"id": "efd96e57-9bc5-4ab2-b06f-79673b50968a",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -314,30 +211,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"date-of-birth\", \"answer\": \"0000-01-01\"   }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -348,9 +222,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "2b921d72-0ed6-4b28-96aa-be4d0fbfa9f5",
+						"id": "9eb0c357-dc6e-498c-8be5-de40980fe2bb",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -370,30 +246,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"country-of-issue\", \"answer\": \"FRA\"  }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -404,9 +257,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "ad8122bd-452f-405b-bc76-9f9e5fa36eef",
+						"id": "e0ea5226-8718-4127-949c-24e10ff30753",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -426,30 +281,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"passport-number\", \"answer\": null  }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -460,9 +292,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "0727e3ea-b846-4db7-a7c8-322f58058f0e",
+						"id": "9ce8f0db-b76f-4b82-b4f7-ffd64d3f25f7",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -482,30 +316,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"passport-issue-date\", \"answer\": \"0000-01-01\"   }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -516,9 +327,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "8aa67b73-8b9f-4237-915f-9848b170f77f",
+						"id": "badff820-c772-4f2b-a461-a08e6039fceb",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -538,30 +351,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"passport-expiry-date\", \"answer\": \"3000-01-01\"   }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -572,9 +362,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "b3913ea2-b29d-45da-a762-099dbce799d9",
+						"id": "c6c6231f-40a2-4f08-b0ea-aa32634f9d5d",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -594,30 +386,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"has-id-card\", \"answer\": true  }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -628,9 +397,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "18d47aa5-6541-4a1e-823f-bac825a09f79",
+						"id": "b6a1e3bc-d08f-487c-b756-ab873ffe4596",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -650,30 +421,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"country-of-issue\", \"answer\": \"FRA\"  }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -684,9 +432,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "379c7adb-27f3-40f9-8fd8-f82ac0fbad06",
+						"id": "41cabd6a-4218-48da-b601-4bfcad3366ee",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -706,30 +456,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"id-number\", \"answer\": \"AB000123\"  }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -740,9 +467,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "ef4a8a95-b40f-452a-a9d8-88a5a55be50a",
+						"id": "6ef1eafc-bcd5-49f7-9145-f1f48a93aec3",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -762,30 +491,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"id-issue-date\", \"answer\": \"0000-01-01\" }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -796,9 +502,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "24aed04d-d33c-47e7-ad93-55f569a2f516",
+						"id": "064af04b-eae8-4595-baa9-b94f90c8b3b5",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -818,30 +526,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"id-expiry-date\", \"answer\": \"3000-01-01\"  }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -852,9 +537,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "2d186b3f-9ff8-40ba-b207-dd4d8890571b",
+						"id": "7139a1eb-6dd4-432e-9453-a2abd4fe3d8a",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -874,30 +561,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"address-line-1\", \"answer\": null  }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -908,9 +572,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "4d254f0a-ff03-4eb2-99f7-d3c13c252072",
+						"id": "5665b3ad-86f1-4f96-a741-912b4ff5d6df",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -930,30 +596,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"town\", \"answer\": null  }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -964,9 +607,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "5aa8a832-0402-4ac0-94c1-cfe94e32b1db",
+						"id": "b8f95a25-f936-4fed-aa37-eb8b7ed75a75",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -986,30 +631,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"county\", \"answer\": null  }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -1020,9 +642,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "5fad867a-0146-44d4-9494-2d129115bc3e",
+						"id": "51882647-9d57-4109-bc23-bedf1e7251d3",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -1042,30 +666,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"postcode\", \"answer\": null  }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -1076,9 +677,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "622a3a4e-acb0-4060-a1cb-7715125b876e",
+						"id": "2bb9fa6a-166a-48ef-93ab-3ebeb33bda73",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -1098,30 +701,7 @@
 					"mode": "raw",
 					"raw": "{ \"questionRef\": \"preferred-contact-method\", \"answer\": \"email,phone\"  }"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -1132,9 +712,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "b89977d9-fbaf-410a-9dab-bb9fdb40e993",
+						"id": "df0ed31c-f786-496d-9167-fe5e23886e8c",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('postAnswerPath');",
 							"pm.test(\"Answer Reset Sucessful\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
@@ -1154,30 +736,7 @@
 					"mode": "raw",
 					"raw": "{\r\n  \"questionRef\": \"document-gap-coverage\",\r\n  \"answer\":\"2015,2016\"\r\n}"
 				},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application/answer?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application",
-						"answer"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{postAnswerPath}}",
 				"description": ""
 			},
 			"response": []
@@ -1188,10 +747,12 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "41c76d83-c74a-4c4b-a1ff-53103da38a69",
+						"id": "9237cb3f-1aad-4bca-883d-8005a1aae859",
 						"type": "text/javascript",
 						"exec": [
-							"pm.test(\"Document Id 002 Deleted \", function () {",
+							"pm.variables.get('dbBaseUrl');",
+							"pm.variables.get('dbpath');",
+							"pm.test(\"Document Id 006 Deleted \", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
 						]
@@ -1202,7 +763,7 @@
 				"method": "DELETE",
 				"header": [],
 				"body": {},
-				"url": "https://eue-db-service-eueapp2idev1-kube1.service.np.iptho.co.uk/eue-db-service/documents/ID005",
+				"url": "{{dbBaseUrl}}{{dbpath}}",
 				"description": "Deletes existing document id"
 			},
 			"response": []

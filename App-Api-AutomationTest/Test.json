@@ -12,9 +12,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "90dce4cd-ef51-4ae4-b170-6a28bd7e3023",
+						"id": "9fd8f81e-a8fc-41fe-a767-43a2636cd6df",
 						"type": "text/javascript",
 						"exec": [
+							"pm.variables.get('baseUrl');",
+							"pm.variables.get('checkAnswerPath');",
 							"pm.test(\"Status code : 200 OK\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});",
@@ -48,7 +50,7 @@
 							"pm.test(\"How would You Prefer To Be Contacted : \" +(jsonData.form.sections[1].pages[1].questions[0].answer), function () {});",
 							"pm.test(\"Document Gap Coverage : \" +(jsonData.form.sections[1].pages[2].questions[0].answer), function () {});",
 							"",
-							"console.log(jsonData.documents)",
+							"",
 							""
 						]
 					}
@@ -58,29 +60,7 @@
 				"method": "GET",
 				"header": [],
 				"body": {},
-				"url": {
-					"raw": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api/application?uan=888878",
-					"protocol": "https",
-					"host": [
-						"eue-applications-api-eueapp2edev1-kube10",
-						"service",
-						"np",
-						"iptho",
-						"co",
-						"uk"
-					],
-					"path": [
-						"eue-applications-api",
-						"application"
-					],
-					"query": [
-						{
-							"key": "uan",
-							"value": "888878",
-							"equals": true
-						}
-					]
-				},
+				"url": "{{baseUrl}}{{checkAnswerPath}}",
 				"description": "This test retrieves values in an application  previously stored in the DB  by the application api"
 			},
 			"response": []

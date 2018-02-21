@@ -1,0 +1,46 @@
+{
+  "id": "a365123c-bedd-6b94-d190-380496f870ae",
+  "name": "EUE_Test",
+  "values": [
+    {
+      "enabled": true,
+      "key": "baseUrl",
+      "value": "https://eue-applications-api-eueapp2edev1-kube10.service.np.iptho.co.uk/eue-applications-api",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "postAnswerPath",
+      "value": "/application/answer?uan=888878",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "checkAnswerPath",
+      "value": "/application?uan=888878",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "dbBaseUrl",
+      "value": "https://eue-db-service-eueapp2idev1-kube1.service.np.iptho.co.uk/eue-db-service",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "dbpath",
+      "value": "/documents/ID006",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "storeDocIdDbPath",
+      "value": "/documents",
+      "type": "text"
+    }
+  ],
+  "timestamp": 1519144765340,
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2018-02-21T10:51:29.088Z",
+  "_postman_exported_using": "Postman/5.5.2"
+}
