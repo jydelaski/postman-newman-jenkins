@@ -1,0 +1,36 @@
+{
+	"info": {
+		"name": "DB-Service",
+		"_postman_id": "9964ace6-31a4-888c-e8dd-bd4294d2fd1b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Database Health Check",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "93d73912-b274-4ac5-969d-bf0832246d4a",
+						"type": "text/javascript",
+						"exec": [
+							"pm.variables.get('dbBaseUrl');",
+							"pm.test(\"EUE Database Service Running\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": "{{dbBaseUrl}}/healthcheck",
+				"description": null
+			},
+			"response": []
+		}
+	]
+}
