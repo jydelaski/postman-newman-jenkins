@@ -1,22 +1,22 @@
 {
 	"info": {
-		"name": "DB-Service",
-		"_postman_id": "9964ace6-31a4-888c-e8dd-bd4294d2fd1b",
+		"name": "Api HealthCheck",
+		"_postman_id": "0a43df16-da92-5265-c468-9265a0cf6c1d",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "Database Health Check",
+			"name": "API Health Check",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
-						"id": "93d73912-b274-4ac5-969d-bf0832246d4a",
+						"id": "10adebcb-c87b-49a8-a47d-7c18b91d4306",
 						"type": "text/javascript",
 						"exec": [
-							"pm.variables.get('dbBaseUrl');",
-							"pm.test(\"EUE Database Service Running\", function () {",
+							"pm.variables.get('baseUrl');",
+							"pm.test(\"EUE Application-API Service Running\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});"
 						]
@@ -27,8 +27,8 @@
 				"method": "GET",
 				"header": [],
 				"body": {},
-				"url": "{{dbBaseUrl}}/healthcheck",
-				"description": null
+				"url": "{{baseUrl}}/healthcheck",
+				"description": ""
 			},
 			"response": []
 		}
