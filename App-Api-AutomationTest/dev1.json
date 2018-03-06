@@ -29,7 +29,7 @@
     {
       "enabled": true,
       "key": "dbpath",
-      "value": "/documents/ID006",
+      "value": "/documents/ID079",
       "type": "text"
     },
     {
@@ -49,10 +49,22 @@
       "key": "orchesBaseUrl",
       "value": "https://eue-orchestrator-eueapp2idev1-kube1.service.np.iptho.co.uk/eue-orchestrator",
       "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "BimAnswerPath",
+      "value": "/application/answer?uan=1111",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "eventDbBaseUrl",
+      "value": "https://eue-db-service-eueapp2idev1-kube1.service.np.iptho.co.uk/eue-db-service/events",
+      "type": "text"
     }
   ],
-  "timestamp": 1519744939528,
+  "timestamp": 1520334628001,
   "_postman_variable_scope": "environment",
-  "_postman_exported_at": "2018-02-27T15:22:26.318Z",
+  "_postman_exported_at": "2018-03-06T11:10:30.340Z",
   "_postman_exported_using": "Postman/5.5.2"
 }
